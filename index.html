@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIM Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo">A-BIM</div>
+            <nav class="nav-links">
+                <a href="#servicios" class="nav-link">Nuestros Servicios</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#nosotros" class="nav-link">Quiénes Somos</a>
+                <a href="#contacto" class="nav-link btn-contact">Contacto</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu" id="mobileMenu">
+            <a href="#servicios" class="mobile-link">Nuestros Servicios</a>
+            <a href="#proyectos" class="mobile-link">Proyectos</a>
+            <a href="#nosotros" class="mobile-link">Quiénes Somos</a>
+            <a href="#contacto" class="mobile-link">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Section 1: Hero -->
+    <section class="section hero" id="hero">
+        <div class="hero-background">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80" alt="Construcción BIM">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Transformamos tus proyectos con tecnología BIM</h1>
+            <p class="hero-subtitle">Modelado, coordinación y documentación de alta precisión para la industria de la construcción</p>
+            <div class="hero-buttons">
+                <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
+                <a href="#contacto" class="btn btn-secondary">Contactar</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Section 2: Por qué BIM -->
+    <section class="section why-bim" id="porque-bim">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-label">Metodología</span>
+                <h2 class="section-title">¿Por qué BIM?</h2>
+            </div>
+            <div class="why-bim-grid">
+                <div class="why-bim-card">
+                    <div class="card-number">01</div>
+                    <h3 class="card-title">Visualización Total</h3>
+                    <p class="card-text">Modelos 3D inteligentes que permiten visualizar el proyecto completo antes de construir, reduciendo errores y mejorando la toma de decisiones.</p>
+                </div>
+                <div class="why-bim-card">
+                    <div class="card-number">02</div>
+                    <h3 class="card-title">Coordinación Eficiente</h3>
+                    <p class="card-text">Detección temprana de interferencias entre disciplinas, evitando costosos cambios durante la construcción.</p>
+                </div>
+                <div class="why-bim-card">
+                    <div class="card-number">03</div>
+                    <h3 class="card-title">Documentación Precisa</h3>
+                    <p class="card-text">Generación automática de planos, planillas y especificaciones directamente desde el modelo, garantizando consistencia.</p>
+                </div>
+                <div class="why-bim-card">
+                    <div class="card-number">04</div>
+                    <h3 class="card-title">Control de Costos</h3>
+                    <p class="card-text">Cómputos precisos y estimaciones de costos integradas que permiten un mejor control presupuestario del proyecto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Nuestros Servicios -->
+    <section class="section services" id="servicios">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-label">Lo que hacemos</span>
+                <h2 class="section-title">Nuestros Servicios</h2>
+            </div>
+            <div class="services-grid">
+                <!-- Servicio 1: Modelado BIM -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/modelado.png" alt="Modelado BIM">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Modelado BIM</h3>
+                        <p class="service-text">Creación de modelos 3D paramétricos para todas las disciplinas: arquitectura, estructura e instalaciones MEP.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 2: Presentaciones -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/presentaciones.jpg" alt="Presentaciones">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Presentaciones</h3>
+                        <p class="service-text">Renders fotorrealistas, recorridos virtuales y visualizaciones para presentar proyectos de manera impactante.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 3: Detección de Interferencias -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/interferencias.jpg" alt="Detección de Interferencias">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Detección de Interferencias</h3>
+                        <p class="service-text">Análisis de clash detection entre disciplinas para identificar y resolver conflictos antes de la construcción.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 4: Documentación -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/documentacion.png" alt="Documentación">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Documentación</h3>
+                        <p class="service-text">Generación de planos constructivos, detalles técnicos y especificaciones directamente desde el modelo BIM.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 5: Cómputo y Estimación -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/computo.png" alt="Cómputo y Estimación">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Cómputo y Estimación de Costo</h3>
+                        <p class="service-text">Extracción automática de cantidades y vinculación con bases de datos de precios para presupuestos precisos.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 6: Capacitación Online -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80" alt="Capacitación Online">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Capacitación Online</h3>
+                        <p class="service-text">Cursos y talleres de formación en metodología BIM y software especializado para equipos de trabajo.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio 7: Generación de Contenido BIM -->
+                <div class="service-card">
+                    <div class="service-image">
+                        <img src="img/componentes.png" alt="Generación de Contenido BIM">
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Generación de Contenido BIM</h3>
+                        <p class="service-text">Desarrollo de familias paramétrica, bibliotecas de componentes y plantillas personalizadas para Revit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Proyectos -->
+    <section class="section projects" id="proyectos">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">Proyectos</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card project-card-large">
+                    <div class="project-image">
+                        <img src="img/sorrento.jpg" alt="Sorrento Villas">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Hospitality</span>
+                        <h3 class="project-title">Sorrento Villas</h3>
+                        <p class="project-description">Modelado BIM completo para documentación de hotel en Miami Beach. (En colaboración con Urban Group Architects)</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/weiner.png" alt="Residencial">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Residencial</span>
+                        <h3 class="project-title">Weiner-Esquenazi</h3>
+                        <p class="project-description">Coordinación MEP y detección de interferencias con trosas. (En colaboración con Urban Group Architects)</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/a891.png" alt="Multiresidencial">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Multiresidencial</span>
+                        <h3 class="project-title">A891</h3>
+                        <p class="project-description">Documentación ejecutiva y cómputo para proyecto multiresidencial</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/mateo.png" alt="Proyecto Hospital Regional">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Residencial</span>
+                        <h3 class="project-title">260 NW 43rd ST</h3>
+                        <p class="project-description">Modelado de estructura para coordinación y análisis. (En colaboración con Urban Group Architects)</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="img/boyaca.png" alt="Proyecto Campus Universitario">
+                    </div>
+                    <div class="project-overlay">
+                        <span class="project-category">Multiresidencial</span>
+                        <h3 class="project-title">Boyacá</h3>
+                        <p class="project-description">Modelado para documentación ejecutiva, planos de arquitectura y secciones detalle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Quiénes Somos -->
+    <section class="section about" id="nosotros">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-label">Sobre Nosotros</span>
+                <h2 class="section-title">Quiénes Somos</h2>
+            </div>
+            <div class="about-intro">
+                <p class="about-text">
+                    Somos un equipo de profesionales especializados en Building Information Modeling con más de 10 años de experiencia en proyectos de construcción de diversa escala y complejidad.
+                </p>
+                <p class="about-text">
+                    Nuestro compromiso es brindar soluciones tecnológicas que optimicen los procesos de diseño, coordinación y construcción, aportando valor en cada etapa del ciclo de vida de los proyectos.
+                </p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="img/valse.jpg" alt="Mariano Valsecchi">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Mariano Valsecchi</h3>
+                        <span class="team-role">Co-Fundador / BIM Manager</span>
+                        <p class="team-bio">Arquitecto especializado en coordinación BIM con experiencia en proyectos de gran escala.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-image">
+                        <img src="img/gabo.png" alt="Gabriel Zubini">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Gabriel Zubini</h3>
+                        <span class="team-role">Co-Fundador / BIM Manager</span>
+                        <p class="team-bio">Arquitecto especializado en coordinación BIM con experiencia en proyectos de gran escala.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Proyectos</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10</span>
+                    <span class="stat-label">Años</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Clientes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Contacto -->
+    <section class="section contact" id="contacto">
+        <div class="section-container contact-container">
+            <div class="contact-info">
+                <span class="section-label">Hablemos</span>
+                <h2 class="section-title">Contacto</h2>
+                <p class="contact-text">
+                    ¿Tenés un proyecto en mente? Nos encantaría conocerlo. Escribinos y te responderemos a la brevedad.
+                </p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:info@bimservices.com">info@bimservices.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Teléfono</span>
+                        <a href="tel:+5491123456789">+54 9 11 2345-6789</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Ubicación</span>
+                        <span>Buenos Aires, Argentina</span>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">BIM</div>
+            <div class="footer-links">
+                <a href="#servicios">Servicios</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+            <div class="footer-copy">© 2025 BIM Services. Todos los derechos reservados.</div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        const header = document.querySelector('header');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Gracias por tu mensaje. Te contactaremos pronto.');
+            contactForm.reset();
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.why-bim-card, .service-card, .project-card, .team-member, .about-intro, .contact-info, .contact-form').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
