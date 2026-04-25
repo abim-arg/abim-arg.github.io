@@ -57,6 +57,12 @@ header.scrolled {
     color: var(--color-black);
 }
 
+.logo img {
+    max-height: 30px; /* adjust depending on your header size */
+    width: auto;
+    display: block;
+}
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -228,13 +234,18 @@ header.scrolled {
 }
 
 .hero-content {
-    max-width: 800px;
+    text-align: center;
     position: relative;
     z-index: 2;
 }
 
+.hero-logo img {
+    max-width: 300px; /* logo size */
+    margin-bottom: 20px;
+}
+
 .hero-title {
-    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-size: clamp(2.5rem, 6vw, 4rem); /* responsive scaling */
     font-weight: 500;
     letter-spacing: -0.03em;
     line-height: 1.1;
@@ -243,7 +254,7 @@ header.scrolled {
 }
 
 .hero-subtitle {
-    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-size: clamp(1rem, 2vw, 1.25rem); /* responsive scaling */
     font-weight: 300;
     color: var(--color-medium-gray);
     margin-bottom: 2.5rem;
@@ -290,10 +301,6 @@ header.scrolled {
     border-color: var(--color-black);
 }
 
-.btn-full {
-    width: 100%;
-}
-
 .scroll-indicator {
     position: absolute;
     bottom: 3rem;
@@ -335,6 +342,7 @@ header.scrolled {
     0% { transform: translateY(-100%); }
     100% { transform: translateY(200%); }
 }
+
 
 /* ==================== WHY BIM ==================== */
 .why-bim {
